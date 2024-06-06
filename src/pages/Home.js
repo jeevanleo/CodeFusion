@@ -12,7 +12,7 @@ const Home = () => {
     e.preventDefault();
     const id = uuidV4();
     setRoomId(id);
-    toast.success("Created a new room");
+    toast.success("newroom created");
   };
 
   const joinRoom = () => {
@@ -42,7 +42,7 @@ const Home = () => {
           src="/code-sync.png"
           alt="code-sync-logo"
         />
-        <h4 className="mainLabel">Paste invitation ROOM ID</h4>
+        <h4 className="mainLabel">Paste ROOM ID</h4>
         <div className="inputGroup">
           <input
             type="text"
@@ -71,11 +71,6 @@ const Home = () => {
           </span>
         </div>
       </div>
-      <footer>
-        <h4>
-          <a href="https://jeevansatyam.netlify.app/">JEEVAN SATYAM</a>
-        </h4>
-      </footer>
     </div>
   );
 };

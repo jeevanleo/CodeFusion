@@ -61,13 +61,16 @@ footer a {
 
 .joinBtn,
 .leaveBtn {
-  background: #4aed88;
+  background: #209cee;
   width: 100px;
   margin-left: auto;
 }
+.joinBtn {
+  color: #ffffff;
+}
 
 .joinBtn:hover {
-  background: #2b824c;
+  background: #0294f4;
 }
 .leaveBtn:hover {
   background: red;
@@ -79,23 +82,29 @@ footer a {
 }
 
 .createNewBtn {
-  color: #4aed88;
+  color: #ffffff;
   text-decoration: none;
-  border-bottom: 1px solid #4aed88;
+  border-bottom: 1px solid #209cee;
   transition: all 0.3s ease-in-out;
 }
 
 .createNewBtn:hover,
 footer a:hover {
-  color: #368654;
-  border-color: #368654;
+  color: #085a91;
+  border-color: #209cee;
 }
 
 .mainWrap {
   display: grid;
   grid-template-columns: 230px 1fr;
 }
-
+@media screen and (min-width: 480px) {
+  .mainWrap {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    height: 100vh;
+  }
+}
 .aside {
   background: #1c1e29;
   padding: 16px;
@@ -130,7 +139,18 @@ footer a:hover {
 }
 
 .logoImage {
-  height: 60px;
+  height: 80px;
+}
+.seLang {
+  border: none;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align-last: center;
 }
 
 .leaveBtn {
@@ -138,9 +158,32 @@ footer a:hover {
   margin-top: 20px;
   background-color: red;
 }
+.btn whiteBoardBtn {
+  width: 100%;
+  margin-top: 20px;
+  background-color: blue;
+  color: black;
+  margin-bottom: 40px;
+}
+.btn copyBtn {
+  width: 100%;
+  margin-top: 20px;
+  background-color: blue;
+  color: black;
+  margin-bottom: 40px;
+}
 .CodeMirror {
   min-height: calc(100vh - 20px);
   font-size: 20px;
   line-height: 1.6;
   padding-top: 20px;
+}
+@media screen and (min-width: 480px) {
+  .CodeMirror {
+    min-height: calc(100vh - 20px);
+    width: calc(100vw - 230px);
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 20px;
+  }
 }
